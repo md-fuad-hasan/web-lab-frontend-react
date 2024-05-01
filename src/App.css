@@ -1,38 +1,436 @@
-.App {
+*{
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+  border: border-box;
+}
+
+html,body{
+  height:80%;
+  background-color: antiquewhite;
+}
+
+.border{
+  border:1px solid transparent;
+}
+
+.border:hover{
+  border:1px solid white; 
+}
+
+.nav-right{
+  display: flex;
+  gap:1rem;
+  margin-right: 1rem;
+}
+
+.nav-bar a{
+  text-decoration: none;
+  color:white;
+  gap:5rem;
+}
+.nav-left h1{
+  font-size: 2rem;
+}
+.nav-left{
+  justify-content: space-around;
+  gap:.5rem;
+  display:flex;
+  margin-left:2rem;
+}
+.nav-bar{
+  height:3rem;
+  width:100%;
+  background-color: rgb(29, 75, 143);
+  color:white;   
+  align-items:center;
+  display:flex;
+  justify-content: space-between;
+}
+
+.nav-logo{
+  height:2rem;
+  width:2rem;
+  border-radius: 50%;
+}
+
+.main{
+min-height: 100vh;
+}
+
+
+/*Registration Form*/
+
+
+.registration-form h3{
+ margin: 2rem auto;
+ text-align: center;
+ font-size: 2rem;
+}
+.registration-form{
+  width:25rem;
+  background-color:rgb(53, 92, 222) ;
+  border:1px solid burlywood;
+  margin:5rem auto 0;
+  border-radius: 1rem;
+  padding:2rem;
+  align-items: center;
+  justify-content: center; 
+  color:white;
+}
+form input{
+  width:100%;
+  border-radius:.25rem;
+  border: 1px solid lightgray;
+  background-color: rgb(116, 148, 243);
+  font-size: 1rem;
+  position:relative;
+  height: 2rem;
+  margin:.25rem auto;
+  color:white;
+  padding-left: .5rem; 
+}
+.registration-form .in-session{
+  position:relative;
+  margin:.25rem auto;
+  font-size:1rem;
+  font-weight: 50;
+}
+
+.registration-form form input::placeholder{
+  color:rgb(242, 219, 41);
+}
+
+
+form #bt1{
+  margin :2rem auto 0;
+  background-color: green;
+  border-radius: .25rem;
+  border:none;
+  border:1px solid rgb(230, 186, 230);
+  width:100%;
+  color:white;
+  height: 1.75rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.registration-form .login{
+  margin:1rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.registration-form .login a{
+  text-decoration: none;
+  color:rgb(22, 240, 66)
+}
+.registration-form .login a:hover{
+  text-decoration:underline;
+  color:red
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/*Login */
+
+.wrapper h2{
+  text-align:center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper .input-box{
+  width:100%;
+  height: 2rem;
+  border-radius:1rem;
+  margin:30px 0;
+  background-color: rgb(116, 148, 243);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-box input{
+  width:100%;
+  height:100%;
+  background:transparent;
+  border:none;
+  outline:none;    
+  margin-left: 1rem;
+}
+.input-box i{
+  position:absolute;
+  right:2rem;
+  transform:translateY(-150%);    
+}
+
+.input-box input::placeholder{
+ color: white;
+}
+
+.wrapper .remember-forgot{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.btn button{
+      transition: all .5s ease;
+      width: 100%;
+      height:2rem;
+      border:none;
+      border-radius: 1rem;
+      font-weight: 600;
+      margin-top: 1.5em;
+      margin-bottom: 1em;
+      background-color: rgb(39, 10, 183);
+      cursor: pointer;
+      color:white;
+}
+.btn i{
+  color:white;
+}
+
+.wrapper a{
+  text-decoration: none;
+  color:white;
+  font-weight:500;
+}
+
+.wrapper a:hover{
+  text-decoration: underline;
+  color:red;
+  font-weight:600;
+}
+
+.wrapper .register{
+  text-align: center;
+}
+
+.wrapper{
+  position:relative;
+  height:19rem;
+  width:25rem;
+  border:1px solid rgb(29, 75, 143);
+  background-color: rgb(53, 92, 222);
+  border-radius: 1.5rem; 
+  padding:1rem;   
+  margin:5rem auto 0;
+  color:white;
+}
+
+/* Accademic Curriculumn */
+
+.ac-container h2{
+  text-align: center;
+  font-size: 2rem;
+  margin:1rem;
+}
+
+.ac-container .select-st{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  border:1px solid rgb(140 140 140);
+  border-radius: .5rem;
+  padding:.25rem;
+  background-color: antiquewhite;
+}
+
+.ac-container table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;    
+  letter-spacing: 1px;
+  width:100%;
+  margin:1rem 0;
+}
+  
+.ac-container thead, tfoot {
+  background-color: rgb(228 240 245);
+}
+
+.ac-container th, td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+} 
+
+
+.ac-container{
+  width:35rem;
+  margin:5rem auto 0;
+  border:1.5px solid rgb(160 160 160);
+  padding:2rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+/*Info-container*/
+
+.info-container h3{
+  font-size:30px;
+  color:rgb(53, 92, 222);
+}
+
+.info-container .image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1rem;
+  margin:1rem;
+}
+
+.info-container img{
+ border:1.5px solid rgb(160 160 160);
+ width:125px;
+ height:150px;
+ padding:.5rem;
+ border-radius:.5rem;
+}
+
+.info-container .info{
+  border:1.5px solid rgb(160 160 160);
+  border-radius: .5rem;
+  padding: 1rem;
+  margin: 1rem;
+
+}
+.info-container .info th{
+  border:1.5px solid rgb(160 160 160);
+  padding: 1rem;
+  background-color: rgb(228 240 245);
+}
+.info-container .image-info{
+  display:flex;
+}
+
+
+.info-container{
+  width:40rem;
+  border:1px solid rgb(160 160 160);
+  padding:2rem;
+  border-radius: 1rem;
+  background-color: white;
+  margin: 5rem auto 0;
+}
+
+/* hhhh tttt */
+
+footer{
+  position:absolute;
+  height:18rem;
+  width:100%;
+  background-color: rgb(29, 75, 143);
+  color:white; 
+  /* justify-content: center; */
+  text-align: center;   
+  /* align-items: center; */
+  padding:1rem;
+  margin-top:5rem;
+  margin-bottom: 0;
+}
+
+
+
+
+/* FormFillUp */
+
+
+
+
+
+/*For: form_fill_up.html */
+.fill-up button{
+  background-color: green;
+  color:white;
+  height:2.5rem;
+  width:15rem;
+  padding:.5rem;
+  font-size: 20px;
+  font-weight: 600;
+  border:1px solid gray;
+  border-radius: .75rem;
+}
+
+
+.fill-up{
+  color:white;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.prev-form tbody #bt1,#bt2{
+   padding: .25rem;
+   height:2rem;
+   width:5rem;
+   background-color: green;
+   border-radius: .25rem;
+   color:white;
+}
+.prev-form tbody #bt2{    
+  background-color: rgb(53, 92, 222);
+}
+.prev-form{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width:80%;
+  margin:2rem auto;
+  
+}
+
+/*For : form.html */
+
+.form-container {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width:80%;
+  margin:2rem auto;
+}
+
+.form-container button{
+  background-color: green;
+  color:white;
+  height:2.5rem;
+  width:15rem;
+  padding:.5rem;
+  font-size: 20px;
+  font-weight: 600;
+  border:1px solid gray;
+  border-radius: .75rem;
+  margin:2rem 0;
+}
+
+/* For form_fill_up_details.html */
+
+.prev-form tbody #bt3{
+  padding: .25rem;
+  height:2rem;
+  width:80%;
+  background-color: green;
+  border-radius: .35rem;
+  color:white;
+  font-weight: 600;
+}
+.prev-form tbody i{
+  margin-right:0.25rem;
+}
+
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;    
+  letter-spacing: 1px;
+  width:100%;
+  margin:1rem 0;
+  background-color: white;
+}
+
+th{
+  background-color: rgb(228 240 245);
+  text-align:left;
+}
+
+th, td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
 }

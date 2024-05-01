@@ -1,0 +1,16 @@
+
+.wrapper{
+    position:relative;
+    height:22rem;
+    width:25rem;
+    border:1px solid rgb(29, 75, 143);
+    background-color: rgb(53, 92, 222);
+    border-radius: 1.5rem; 
+    padding:1rem;
+    margin: auto;   
+    color:white;
+}
+.withMsg{
+    margin:6rem auto 0;
+
+}

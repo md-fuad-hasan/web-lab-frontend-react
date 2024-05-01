@@ -1,0 +1,78 @@
+
+
+  
+  /*Registration Form*/
+  
+  
+  .registration-form h3{
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 2rem;
+ }
+
+ .withMsg{
+    margin:6rem auto 0;
+
+}
+ .registration-form{
+     width:25rem;
+     background-color:#355CDE ;
+     border:1px solid burlywood;
+     border-radius: 1rem;
+     padding:2rem;
+     align-items: center;
+     justify-content: center; 
+     color:white;
+     margin: auto;
+ }
+ rm input{
+     width:100%;
+     border-radius:.25rem;
+     border: 1px solid lightgray;
+     background-color: rgb(116, 148, 243);
+     font-size: 1rem;
+     position:relative;
+     height: 2rem;
+     margin:.25rem auto;
+     color:white;
+     padding-left: .5rem; 
+ }
+ .registration-form .session{
+     position:relative;
+     margin:.25rem auto;
+     font-size:1rem;
+     font-weight: 70;
+     color: black;
+ }
+ 
+ .registration-form form input::placeholder{
+     color:rgb(242, 219, 41);
+ }
+ 
+ 
+ form #bt1{
+     margin :2rem auto 0;
+     background-color: green;
+     border-radius: .25rem;
+     border:none;
+     border:1px solid rgb(230, 186, 230);
+     width:100%;
+     color:white;
+     height: 1.75rem;
+     cursor: pointer;
+     font-weight: 600;
+ }
+ 
+ .registration-form .login{
+     margin:1rem;
+     text-align: center;
+ }
+ .registration-form .login a{
+     text-decoration: none;
+     color:rgb(22, 240, 66)
+ }
+ .registration-form .login a:hover{
+     text-decoration:underline;
+     color:red
+ }
+ 
